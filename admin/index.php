@@ -22,7 +22,7 @@ require_once('../vqmod/vqmod.php');
 VQMod::bootup();
 
 // Startup
-require_once(VQMod::modCheck(DIR_SYSTEM . 'startup.php'));
+require_once(VQMod::modCheck('../system/startup.php'));
 
 // Registry
 $registry = new Registry();
