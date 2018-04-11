@@ -27,7 +27,7 @@ VQMod::bootup();
 
 echo VQMod::modCheck(DIR_SYSTEM . 'startup.php');
 // Startup
-require_once(VQMod::modCheck(DIR_SYSTEM . 'startup.php'));
+require_once('../system/startup.php'));
 
 // Registry
 $registry = new Registry();
