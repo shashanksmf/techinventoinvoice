@@ -1,5 +1,9 @@
 <?php
 // Configuration
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 if (file_exists('../config.php')) {
     require_once('../config.php');
 
