@@ -15,5 +15,5 @@ define('DIR_TEMPLATE', "https://anyinvoice.herokuapp.com" . '/view/');
 define('DB_DRIVER', '');
 define('DB_HOSTNAME', 'us-cdbr-iron-east-05.cleardb.net');
 define('DB_USERNAME', 'bcada21bc58477');
-define('DB_PASSWORD', '	96a24738');
+define('DB_PASSWORD', '96a24738');
 define('DB_DATABASE', 'heroku_51173485efddc6a');
