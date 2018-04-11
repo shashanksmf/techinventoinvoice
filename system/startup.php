@@ -80,7 +80,7 @@ spl_autoload_register('library');
 spl_autoload_extensions('.php');
 
 // Engine
-require_once('system/engine/action.php');
+require_once('engine/action.php');
 require_once(DIR_SYSTEM . 'engine/controller.php');
 require_once(DIR_SYSTEM . 'engine/front.php');
 require_once(DIR_SYSTEM . 'engine/loader.php');
