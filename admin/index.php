@@ -25,8 +25,9 @@ if (!defined('DIR_APPLICATION')) {
 require_once('../vqmod/vqmod.php');
 VQMod::bootup();
 
+echo VQMod::modCheck(DIR_SYSTEM . 'startup.php';
 // Startup
-require_once('../system/startup.php'));
+require_once(VQMod::modCheck(DIR_SYSTEM . 'startup.php'));
 
 // Registry
 $registry = new Registry();
