@@ -17,6 +17,7 @@ AddDefaultCharset utf-8
 <IfModule mod_headers.c>
   Header set X-Content-Type-Options "nosniff"
 </IfModule>
+allow from all
 
 # SEO URL Settings
 RewriteEngine On
