@@ -18,7 +18,7 @@ AddDefaultCharset utf-8
 </IfModule>
 
 # Prevent Direct Access to files
-<FilesMatch "(?i)((\.tpl\\.js|\.css|\.ini|\.log|(?<!robots)\.txt))">
+<FilesMatch "(?i)((\.tpl\\*.js|\*.css|\.ini|\.log|(?<!robots)\.txt))">
 Order allow,deny
 Allow from all
 </FilesMatch>
