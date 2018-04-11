@@ -17,11 +17,11 @@
   <?php foreach ($links as $link) { ?>
   <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
   <?php } ?>
-  <script type="text/javascript" src="vendor/jquery/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="ven/jquery/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="ven/bootstrap/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="application/view/javascript/system.js"></script>
-  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="ven/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="ven/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="application/view/theme/default/stylesheet/stylesheet.css" />
   <?php foreach ($scripts as $script) { ?>
   <script type="text/javascript" src="<?php echo $script; ?>"></script>

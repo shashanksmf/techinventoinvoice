@@ -8,9 +8,9 @@
   </title>
   <base href="<?php echo $base; ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="text/javascript" src="<?php echo $application; ?>vendor/jquery/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="<?php echo $application; ?>vendor/bootstrap/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="<?php echo $application; ?>vendor/bootstrap/css/bootstrap.min.css" />
+  <script type="text/javascript" src="<?php echo $application; ?>ven/jquery/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="<?php echo $application; ?>ven/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="<?php echo $application; ?>ven/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="view/stylesheet/stylesheet.css" />
 </head>
 
