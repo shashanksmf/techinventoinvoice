@@ -2,8 +2,8 @@
 defined('_PATH') or die('Restricted!');
 
 define('VERSION', '1.3.0a');
-define('HTTP_SERVER', "http://anyinvoice.herokuapp.com");
-define('HTTP_APPLICATION', "http://anyinvoice.herokuapp.com");
+define('HTTP_SERVER', "https://anyinvoice.herokuapp.com");
+define('HTTP_APPLICATION', "https://anyinvoice.herokuapp.com");
 define('HTTPS_SERVER', "https://anyinvoice.herokuapp.com");
 define('HTTPS_APPLICATION', "https://anyinvoice.herokuapp.com");
 define('DIR_APPLICATION', "https://anyinvoice.herokuapp.com" . '/');
