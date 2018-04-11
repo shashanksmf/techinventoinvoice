@@ -20,7 +20,7 @@ AddDefaultCharset utf-8
 # Prevent Direct Access to files
 <FilesMatch "(?i)((\.tpl|\.ini|\.log|(?<!robots)\.txt))">
  Order deny,allow
- #Deny from all
+ allow from all
 </FilesMatch>
 
 # Prevent some browsers from MIME-sniffing the response.
