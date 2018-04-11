@@ -33,8 +33,8 @@ $loader = new Loader($registry);
 $registry->set('load', $loader);
 
 // Url
-// $url = new Url(HTTP_SERVER, HTTP_SERVER);
-// $registry->set('url', $url);
+$url = new Url(HTTP_SERVER, HTTP_SERVER);
+$registry->set('url', $url);
 
 // Request
 $request = new Request();

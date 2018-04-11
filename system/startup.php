@@ -1,8 +1,6 @@
 <?php
 // Error Reporting
 error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 
 // Check Version
 if (version_compare(phpversion(), '5.3.0', '<') == true) {
@@ -68,7 +66,7 @@ if ((isset($_SERVER['HTTPS']) && (($_SERVER['HTTPS'] == 'on') || ($_SERVER['HTTP
 
 // Autoloader
 function library($class) {
-	$file =  'library/' . str_replace('\\', '/', strtolower($class)) . '.php';
+	$file = DIR_SYSTEM . 'library/' . str_replace('\\', '/', strtolower($class)) . '.php';
 	
 	if (is_file($file)) {
 		include_once($file);
@@ -82,13 +80,13 @@ spl_autoload_register('library');
 spl_autoload_extensions('.php');
 
 // Engine
-require_once( 'engine/action.php');
-require_once( 'engine/controller.php');
-require_once( 'engine/front.php');
-require_once( 'engine/loader.php');
-require_once( 'engine/model.php');
-require_once( 'engine/registry.php');
+require_once(DIR_SYSTEM . 'engine/action.php');
+require_once(DIR_SYSTEM . 'engine/controller.php');
+require_once(DIR_SYSTEM . 'engine/front.php');
+require_once(DIR_SYSTEM . 'engine/loader.php');
+require_once(DIR_SYSTEM . 'engine/model.php');
+require_once(DIR_SYSTEM . 'engine/registry.php');
 
 // Helper
-require_once( 'helper/json.php');
-require_once( 'helper/utf8.php');
+require_once(DIR_SYSTEM . 'helper/json.php');
+require_once(DIR_SYSTEM . 'helper/utf8.php');
