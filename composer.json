@@ -4,7 +4,6 @@
       "document-root": "",
       "index-document": "index.php",
       "engines": {
-        "nginx": "1.6.0",
         "php": "5.3.28"
       },
       "php-config": [],
