@@ -4,7 +4,7 @@
       "document-root": "",
       "index-document": "index.php",
       "engines": {
-        "php": "5.3.28"
+        "php": "7.1.3"
       }
     }
   }
