@@ -4,8 +4,11 @@
       "document-root": "",
       "index-document": "index.php",
       "engines": {
-        "php": "7.1.1"
+        "php": "7.1.9"
       }
     }
+  },
+  "require": {
+    "php": "7.1.9"
   }
 }
