@@ -1,9 +1,7 @@
 {
-    "packages": [
-        {
+    "packages":  {
             "require": {
                 "php": "7.1.1"
             }
         }
-    ]
 }
