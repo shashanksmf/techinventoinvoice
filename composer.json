@@ -5,7 +5,7 @@
       "index-document": "index.php",
       "engines": {
         "nginx": "",
-        "php": "5.3.1"
+        "php": "5.3.28"
       },
       "php-config": [],
       "php-includes": [],
