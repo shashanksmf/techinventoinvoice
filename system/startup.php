@@ -66,7 +66,7 @@ if ((isset($_SERVER['HTTPS']) && (($_SERVER['HTTPS'] == 'on') || ($_SERVER['HTTP
 
 // Autoloader
 function library($class) {
-	$file = DIR_SYSTEM . 'library/' . str_replace('\\', '/', strtolower($class)) . '.php';
+	$file =  'library/' . str_replace('\\', '/', strtolower($class)) . '.php';
 	
 	if (is_file($file)) {
 		include_once($file);
