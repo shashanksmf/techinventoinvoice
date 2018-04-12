@@ -1,9 +1,5 @@
 <?php
 // Configuration
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-
 if (file_exists('../config.php')) {
     require_once('../config.php');
 
@@ -26,7 +22,7 @@ require_once('../vqmod/vqmod.php');
 VQMod::bootup();
 
 // Startup
-require_once(VQMod::modCheck(DIR_SYSTEM.'startup.php'));
+require_once(VQMod::modCheck(DIR_SYSTEM . 'startup.php'));
 
 // Registry
 $registry = new Registry();
