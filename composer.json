@@ -1,8 +1,21 @@
-// {
-//     "require-dev": {
-//     "heroku/heroku-buildpack-php": "*"
-//   },
-//   "require": {
-//         "php": "5.6.32"
-//   } 
-// }
+{
+  "extra": {
+    "paas": {
+      "document-root": "",
+      "index-document": "index.php",
+      "engines": {
+        "nginx": "",
+        "php": "5.3.1"
+      },
+      "php-config": [],
+      "php-includes": [],
+      "php-fpm-config": [],
+      "php-fpm-includes": [],
+      "nginx-includes": [],
+      "log-files": [],
+      "compile": [],
+      "new-relic": false,
+      "access-log-format": ""
+    }
+  }
+}
