@@ -2,9 +2,7 @@
     "require-dev": {
     "heroku/heroku-buildpack-php": "*"
   },
-  "config": {
-    "platform": {
+  "require": {
         "php": "5.3.5"
-    }
   } 
 }
