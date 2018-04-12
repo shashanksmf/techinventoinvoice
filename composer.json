@@ -4,10 +4,7 @@
       "document-root": "",
       "index-document": "index.php",
       "engines": {
-        "php": "5.3.5",
-        "assassins/edward": "1.1.2",
-        "templars/shay":    "1.1.*"
-
+        "php": "7.1.1"
       }
     }
   }
