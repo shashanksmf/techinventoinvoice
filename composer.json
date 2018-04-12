@@ -5,16 +5,7 @@
       "index-document": "index.php",
       "engines": {
         "php": "5.3.28"
-      },
-      "php-config": [],
-      "php-includes": [],
-      "php-fpm-config": [],
-      "php-fpm-includes": [],
-      "nginx-includes": [],
-      "log-files": [],
-      "compile": [],
-      "new-relic": false,
-      "access-log-format": ""
+      }
     }
   }
 }
