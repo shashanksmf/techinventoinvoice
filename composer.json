@@ -3,6 +3,6 @@
     "heroku/heroku-buildpack-php": "*"
   },
   "require": {
-        "php": "5.3.1"
+        "php": "5.6.32"
   } 
 }
