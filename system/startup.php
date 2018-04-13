@@ -79,6 +79,7 @@ function library($class) {
 spl_autoload_register('library');
 spl_autoload_extensions('.php');
 
+echo "<br/>dirr system-->".DIR_SYSTEM."<br/>";
 // Engine
 require_once(DIR_SYSTEM . 'engine/action.php');
 require_once(DIR_SYSTEM . 'engine/controller.php');
