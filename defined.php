@@ -17,7 +17,7 @@ define('DIR_APPLICATION', __DIR__);
 define('DIR_EXTENSION', __DIR__."/extension/");
 define('DIR_IMAGE', __DIR__."/image/");
 define('DIR_LANGUAGE', __DIR__."/language/");
-define('DIR_SYSTEM', __DIR__."/system/");
+define('DIR_SYSTEM',"/app/system/");
 define('DIR_TEMPLATE', __DIR__."/view/");
 define('DB_DRIVER', 'mysqli');
 
