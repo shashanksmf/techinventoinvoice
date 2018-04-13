@@ -1,5 +1,7 @@
 <?php
 $path = getcwd();
+echo "path-->".$path."<br/>";
+echo "__DIR__-->".__DIR__."<br/>";
 define('_URL', $path);
 define('_SURL',$path);
 define('_PATH', __DIR__ . '/application');
