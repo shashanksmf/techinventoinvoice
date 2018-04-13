@@ -1,7 +1,9 @@
 <?php
-
-define('_URL', "https://easyinvoice.scalingo.io");
-define('_SURL', "https://easyinvoice.scalingo.io");
+$path = getcwd();
+echo "path->".$path;
+echo "<br/>".__DIR__;
+define('_URL', $path);
+define('_SURL',$path);
 define('_PATH', __DIR__ . '/application');
 define('_FRONT', true);
 
