@@ -19,7 +19,7 @@ define('DIR_SYSTEM', __DIR__."/system/");
 define('DIR_TEMPLATE', __DIR__."/view/");
 define('DB_DRIVER', 'mysqli');
 
-echo "<br/>DIR_SYSTEM".DIR_SYSTEM."<br/>"
+echo "<br/>DIR_SYSTEM".DIR_SYSTEM."<br/>";
 
 define('DB_HOSTNAME', 'fb1cdd50-5bd5-4c69-9222-37aa532835c7.easyinvoice-5720.mysql.dbs.scalingo.com:30867');
 define('DB_USERNAME', 'easyinvoicedbuser');
