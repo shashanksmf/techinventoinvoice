@@ -81,13 +81,13 @@ spl_autoload_extensions('.php');
 
 echo "<br/>dirr system-->".DIR_SYSTEM."<br/>";
 // Engine
-require_once(DIR_SYSTEM . 'engine/action.php');
-require_once(DIR_SYSTEM . 'engine/controller.php');
-require_once(DIR_SYSTEM . 'engine/front.php');
-require_once(DIR_SYSTEM . 'engine/loader.php');
-require_once(DIR_SYSTEM . 'engine/model.php');
-require_once(DIR_SYSTEM . 'engine/registry.php');
+require_once('./engine/action.php');
+require_once('./engine/controller.php');
+require_once('./engine/front.php');
+require_once('./engine/loader.php');
+require_once('./engine/model.php');
+require_once('./engine/registry.php');
 
 // Helper
-require_once(DIR_SYSTEM . 'helper/json.php');
-require_once(DIR_SYSTEM . 'helper/utf8.php');
+require_once('./helper/json.php');
+require_once('./helper/utf8.php');
