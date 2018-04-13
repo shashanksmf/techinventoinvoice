@@ -23,7 +23,6 @@ define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/');
 define('_FRONT', false);
 
-echo DIR_SYSTEM.'/'.DIR_APPLICATION;
 // Startup
 // define("DIR_SYSTEM",str_replace('\'', '/', realpath(dirname(__FILE__) . '/../')) . '/system/');
 echo constant("DIR_SYSTEM");
@@ -45,7 +44,7 @@ require_once('./../system/library/language.php');
 require_once('./../system/engine/front.php');
 // require_once('./../system/library/front.php');
 // Url
-$url = new Url("https://easyinvoice.scalingo.io","");
+$url = new Url("easyinvoice.scalingo.io","https");
 $registry->set('url', $url);
 
 // Request
@@ -83,9 +82,12 @@ if (file_exists('../config.php')) {
 // Action
 if (isset($request->get['load'])) {
     $action = new Action($request->get['load']);
+		echo "if";
 } elseif ($upgrade) {
+	echo "else if";
     $action = new Action('upgrade/upgrade');
 } else {
+	echo "else";
     $action = new Action('install/step_1');
 }
 
