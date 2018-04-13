@@ -37,8 +37,9 @@ $registry = new Registry();
 $loader = new Loader($registry);
 $registry->set('load', $loader);
 
+require_once('./../system/library/url.php');
 // Url
-$url = new Url(HTTP_SERVER, HTTP_SERVER);
+$url = new Url("https://easyinvoice.scalingo.io","");
 $registry->set('url', $url);
 
 // Request
