@@ -23,11 +23,12 @@ define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/');
 define('_FRONT', false);
 
+echo DIR_SYSTEM.'/'.DIR_APPLICATION;
 // Startup
 // define("DIR_SYSTEM",str_replace('\'', '/', realpath(dirname(__FILE__) . '/../')) . '/system/');
 echo constant("DIR_SYSTEM");
 
-require_once(DIR_SYSTEM . 'startup.php');
+require_once('./../system/startup.php');
 
 // Registry
 $registry = new Registry();
