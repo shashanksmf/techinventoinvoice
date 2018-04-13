@@ -20,7 +20,7 @@ AddDefaultCharset utf-8
 # Prevent Direct Access to files
 <FilesMatch "(?i)((\.tpl|\.ini|\.log|(?<!robots)\.txt))">
  Order deny,allow
- Deny from all
+ allow from all
 </FilesMatch>
 
 # Prevent some browsers from MIME-sniffing the response.
@@ -37,7 +37,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !.*\.(ico|gif|jpg|jpeg|png|js|css)
 RewriteRule ^([^?]*) index.php?_load_=$1 [L,QSA]
 
-### Additional Settings that may need to be enabled for some servers 
+### Additional Settings that may need to be enabled for some servers
 ### Uncomment the commands by removing the # sign in front of it.
 ### If you get an "Internal Server Error 500" after enabling any of the following settings, restore the # as this means your host doesn't allow that.
 
