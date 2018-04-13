@@ -21,13 +21,13 @@ AddDefaultCharset utf-8
 
 
 # SEO URL Settings
-RewriteEngine On
+#RewriteEngine On
 
-RewriteBase /
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} !.*\.(ico|gif|jpg|jpeg|png|js|css)
-RewriteRule ^([^?]*) index.php?_load_=$1 [L,QSA]
+#RewriteBase /
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_URI} !.*\.(ico|gif|jpg|jpeg|png|js|css)
+#RewriteRule ^([^?]*) index.php?_load_=$1 [L,QSA]
 
 ### Additional Settings that may need to be enabled for some servers
 ### Uncomment the commands by removing the # sign in front of it.
