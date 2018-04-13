@@ -1,7 +1,7 @@
 <?php
 // Error Reporting
 error_reporting(E_ALL);
-
+include('./../defined.php');
 // Check Version
 if (version_compare(phpversion(), '5.3.0', '<') == true) {
     exit('PHP5.3+ Required');
@@ -30,7 +30,7 @@ if (!ini_get('date.timezone')) {
     date_default_timezone_set('UTC');
 }
 
-// Windows IIS Compatibility  
+// Windows IIS Compatibility
 if (!isset($_SERVER['DOCUMENT_ROOT'])) {
     if (isset($_SERVER['SCRIPT_FILENAME'])) {
         $_SERVER['DOCUMENT_ROOT'] = str_replace('\\', '/', substr($_SERVER['SCRIPT_FILENAME'], 0, 0 - strlen($_SERVER['PHP_SELF'])));
@@ -67,12 +67,12 @@ if ((isset($_SERVER['HTTPS']) && (($_SERVER['HTTPS'] == 'on') || ($_SERVER['HTTP
 // Autoloader
 function library($class) {
 	$file = DIR_SYSTEM . 'library/' . str_replace('\\', '/', strtolower($class)) . '.php';
-	
+
 	if (is_file($file)) {
 		include_once($file);
 		return true;
 	}
-	
+
 	return false;
 }
 
