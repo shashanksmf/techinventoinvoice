@@ -1,4 +1,5 @@
 <?php
+ecbo realpath(dirname(__FILE__);
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 // Configuration
@@ -13,7 +14,7 @@ if (file_exists('config.php')) {
     require_once('defined.php');
 }
 
-// Install 
+// Install
 if (!defined('DIR_APPLICATION')) {
     header('Location: install/index.php');
     exit;
@@ -33,7 +34,7 @@ $registry = new Registry();
 $config = new Config();
 $registry->set('config', $config);
 
-// Database 
+// Database
 $db = new DB(DB_DRIVER, DB_HOSTNAME, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
 $registry->set('db', $db);
 
@@ -59,13 +60,13 @@ $registry->set('load', $loader);
 $url = new Url($config->get('config_url'), $config->get('config_secure') ? $config->get('config_ssl') : $config->get('config_url'));
 $registry->set('url', $url);
 
-// Log 
+// Log
 $log = new Log($config->get('config_error_filename'));
 $registry->set('log', $log);
 
 function error_handler($errno, $errstr, $errfile, $errline) {
     global $log, $config;
-	
+
 	if (error_reporting() === 0) {
 		return false;
 	}
@@ -206,7 +207,7 @@ $registry->set('customer', new Customer($registry));
 // Currency
 $registry->set('currency', new Currency($registry));
 
-// Front Controller 
+// Front Controller
 $controller = new Front($registry);
 
 // Maintenance Mode

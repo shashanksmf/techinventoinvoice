@@ -23,6 +23,9 @@ define('DIR_TEMPLATE', DIR_APPLICATION . 'view/');
 define('_FRONT', false);
 
 // Startup
+define("DIR_SYSTEM",str_replace('\'', '/', realpath(dirname(__FILE__) . '/../')) . '/system/');
+echo constant("DIR_SYSTEM");
+
 require_once(DIR_SYSTEM . 'startup.php');
 
 // Registry
@@ -54,7 +57,7 @@ $language = new Language('en-gb');
 $language->load('default');
 $registry->set('language', $language);
 
-// Front Controller 
+// Front Controller
 $controller = new Front($registry);
 
 // Upgrade
@@ -63,7 +66,7 @@ $upgrade = false;
 if (file_exists('../config.php')) {
     if (filesize('../config.php') > 0) {
 		require_once('../config.php');
-		
+
         $upgrade = true;
     }
 }

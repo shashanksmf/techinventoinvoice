@@ -1,6 +1,5 @@
 <?php
 defined('_PATH') or die('Restricted!');
-
 define('VERSION', '1.3.0a');
 define('HTTP_SERVER', "https://easyinvoice.scalingo.io");
 define('HTTP_APPLICATION', "https://easyinvoice.scalingo.io");
@@ -18,8 +17,6 @@ define('DB_HOSTNAME', 'fb1cdd50-5bd5-4c69-9222-37aa532835c7.easyinvoice-5720.mys
 define('DB_USERNAME', 'easyinvoicedbuser');
 define('DB_PASSWORD', 'easyinvoicedbuser');
 define('DB_DATABASE', 'easyinvoice_5720');
-
-
 
 // define('DB_HOSTNAME', 'us-cdbr-iron-east-05.cleardb.net');
 // define('DB_USERNAME', 'bcada21bc58477');
