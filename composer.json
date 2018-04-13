@@ -8,8 +8,8 @@
       },
       "php-config": [
     "display_errors=on",
-    "allow_url_include=1",
-    "allow_url_fopen=1"
+    "allow_url_include=On",
+    "allow_url_fopen=On"
   ]
     }
   },
