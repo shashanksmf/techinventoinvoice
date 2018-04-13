@@ -81,8 +81,8 @@ spl_autoload_extensions('.php');
 
 echo "dirr system-->".DIR_SYSTEM;
 // Engine
-require_once(DIR_SYSTEM . 'engine/action.php');
-require_once(DIR_SYSTEM . 'engine/controller.php');
+require_once('/engine/action.php');
+require_once('engine/controller.php');
 require_once(DIR_SYSTEM . 'engine/front.php');
 require_once(DIR_SYSTEM . 'engine/loader.php');
 require_once(DIR_SYSTEM . 'engine/model.php');
