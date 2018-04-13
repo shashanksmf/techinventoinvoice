@@ -41,8 +41,8 @@ require_once('./../system/library/url.php');
 require_once('./../system/library/request.php');
 require_once('./../system/library/response.php');
 require_once('./../system/library/session.php');
-require_once('./../system/library/language.php');
-require_once('./../system/library/front.php');
+require_once('./../system/engine/front.php');
+// require_once('./../system/library/front.php');
 // Url
 $url = new Url("https://easyinvoice.scalingo.io","");
 $registry->set('url', $url);
