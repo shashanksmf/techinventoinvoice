@@ -5,7 +5,11 @@
       "index-document": "index.php",
       "engines": {
         "php": "7.1.9"
-      }
+      },
+      "php-config": [
+    "display_errors=on",
+    "allow_url_include=1"
+  ]
     }
   },
   "require": {
