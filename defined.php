@@ -1,7 +1,5 @@
 <?php
 $path = getcwd();
-echo "path->".$path;
-echo "<br/>".__DIR__;
 define('_URL', $path);
 define('_SURL',$path);
 define('_PATH', __DIR__ . '/application');
@@ -13,12 +11,12 @@ define('HTTP_SERVER', "https://easyinvoice.scalingo.io");
 define('HTTP_APPLICATION', "https://easyinvoice.scalingo.io");
 define('HTTPS_SERVER', "https://easyinvoice.scalingo.io");
 define('HTTPS_APPLICATION', "https://easyinvoice.scalingo.io");
-define('DIR_APPLICATION', "https://easyinvoice.scalingo.io");
-define('DIR_EXTENSION', "https://easyinvoice.scalingo.io/extension/");
-define('DIR_IMAGE', "https://easyinvoice.scalingo.io/image/");
-define('DIR_LANGUAGE', "https://easyinvoice.scalingo.io/language/");
-define('DIR_SYSTEM', "https://easyinvoice.scalingo.io/system/");
-define('DIR_TEMPLATE', "https://easyinvoice.scalingo.io/view/");
+define('DIR_APPLICATION', __DIR__);
+define('DIR_EXTENSION', __DIR__."/extension/");
+define('DIR_IMAGE', __DIR__."/image/");
+define('DIR_LANGUAGE', __DIR__."/language/");
+define('DIR_SYSTEM', __DIR__."/system/");
+define('DIR_TEMPLATE', __DIR__."/view/");
 define('DB_DRIVER', 'mysqli');
 
 define('DB_HOSTNAME', 'fb1cdd50-5bd5-4c69-9222-37aa532835c7.easyinvoice-5720.mysql.dbs.scalingo.com:30867');
