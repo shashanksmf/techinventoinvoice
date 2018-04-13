@@ -24,7 +24,7 @@ define('DIR_TEMPLATE', DIR_APPLICATION . 'view/');
 define('_FRONT', false);
 
 // Startup
-define("DIR_SYSTEM",str_replace('\'', '/', realpath(dirname(__FILE__) . '/../')) . '/system/');
+// define("DIR_SYSTEM",str_replace('\'', '/', realpath(dirname(__FILE__) . '/../')) . '/system/');
 echo constant("DIR_SYSTEM");
 
 require_once(DIR_SYSTEM . 'startup.php');
