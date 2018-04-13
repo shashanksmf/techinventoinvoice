@@ -9,7 +9,7 @@ class Session {
             ini_set('session.cookie_httponly', 'On');
 
             session_set_cookie_params(0, '/');
-            session_start();
+            // session_start();
         }
 
         $this->data =& $_SESSION;
